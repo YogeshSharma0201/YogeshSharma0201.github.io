@@ -1,0 +1,126 @@
+h1{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-link:hover{
+  background: #184790;
+}
+
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+
+.container{
+  margin-top: 40px;
+  background-color:#FB8C00;  
+}
+
+#portfolio{
+  background-color:#039BE5;
+  padding: 20px 0px;
+}
+
+#about{
+  background-color: #FB8C00;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#contact{
+  background-color: #00897B;
+}
+
+#aboutText{
+  position: absolute;
+}
+
+/* .container{
+  margin-top: 60px;
+} */
+
+.container #aboutText{
+  padding-top: 60px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.screenShots{
+  width: 100%;
+  margin-top: 60px;
+  margin-left: 30px;
+  border: 3px solid #B0BEC5;
+  border-radius: 1%;
+}
+
+
+h5{
+  margin-left: 30px;
+  width: 100%;
+  background: #B0BEC5;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+#contactHeader{
+  padding-top: 30px;
+  background-color: #00897B;
+}
+
+#portheader{
+    padding-top: 30px;
+    background-color:#039BE5;
+}
+
+#contact{
+  padding: 30px 0 10px 20px;;
+}
+
+#contact a{
+  display: block;
+  border: 2px solid white;
+  color: white;
+  width: 22%;
+  margin: 10px auto; 
+  padding: 5px;
+  text-align: center;
+}
+
+#facebook:hover{
+  background-color: #0288D1;
+  text-decoration: none;
+}
+
+#google:hover{
+  background-color: #E64A19;
+  text-decoration: none;
+}
+
+#github:hover{
+  background-color: #757575;
+  text-decoration: none;
+}
+
+#freecodecamp:hover{
+  background-color: #004D40;
+  text-decoration: none;
+}
+
+#LinkedIn:hover{
+  background-color: #0077b5;
+  text-decoration: none;
+}
+
+#Codepen:hover{
+  background-color: #000000;
+  text-decoration: none;
+}
+
+.footer{
+  background: #0275d8;
+  color: white;
+}
