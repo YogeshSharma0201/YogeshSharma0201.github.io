@@ -19,6 +19,7 @@ body {
   cursor: default;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  background-color: #B2EBF2;
 }
 
 a {
@@ -472,22 +473,19 @@ h3 {
   top: 40%;
 }
 
-.resume .func .interests {
+.resume .base .interests {
   background: #283593;
-  margin: 15px 0 0;
-  padding: 15px;
 }
 
-.resume .func .interests-items {
+.resume .base .interests-items {
   box-sizing: border-box;
-  padding: 0 0 15px;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
 
-.resume .func .interests-items div {
+.resume .base .interests-items div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -497,7 +495,7 @@ h3 {
   border-radius: 50%;
 }
 
-.resume .func .interests-items div:hover i {
+.resume .base .interests-items div:hover i {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -507,7 +505,7 @@ h3 {
   transition-duration: 0.3s;
 }
 
-.resume .func .interests-items div i {
+.resume .base .interests-items div i {
   font-size: 45px;
   width: 60px;
   height: 60px;
@@ -516,7 +514,7 @@ h3 {
   transition-duration: 0.3s;
 }
 
-.resume .func .interests-items div span {
+.resume .base .interests-items div span {
   display: block;
 }
 
