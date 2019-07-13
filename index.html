@@ -5,8 +5,16 @@
 		<link rel="stylesheet" href="./portfolio.css" />
 		<script src="./jquery.js"></script>
 		<script src="./portfolio.js"></script>
+		<link rel="manifest" href="./manifest.json">
 	</head>
 	<body>
+		<script>
+			if('serviceWorker' in navigator) {
+			navigator.serviceWorker
+					.register('./service-worker.js')
+					.then(function() { console.log("Service Worker Registered"); });
+			}
+		</script>
 		<div class="resume">
 			<div class="base">
 				<div class="profile">
@@ -54,33 +62,79 @@
 			<div class="func">
 				<div class="work">
 					<h3><i class="fa fa-briefcase"></i>Experience</h3>
-					<ul>
-						<li><span>Web Developer</span><small>BookingsAround <br> I worked on front-end part of their website, which is made with React.js framework.
-</small><small>Jun 2018 - Aug 2018</small></li>
-						<li><span>Teaching Assistant</span><small>Coding Ninjas <br> I have worked as a Teaching assistant for coding ninjas's online course for competitive coding (eminence). My responsibilities included problem setting on codezen, setting up test-cases and scaffolds and debugging codes.</small><small>Dec 2017 - Apr 2017</small></li>
+					<ul class="styled-list">
+						<li><span><a class="li-link" href="https://transfin.in" target="__blank">Transfin.</a></span>
+						<span>Web Developer Intern</span>
+						<div class="work-list">
+							<small>
+								<i class="fa fa-arrow-right"></i>Building web components using react
+							</small>
+							<small>
+								<i class="fa fa-arrow-right"></i>Improved loading time through lazy loading
+							</small>
+							<small>
+								<i class="fa fa-arrow-right"></i>Use twitter account activity api to automatically update tweet deck collections
+							</small>
+							<small>
+								<i class="fa fa-arrow-right"></i>Increased google pagespeed score
+							</small>
+						</div>
+						</small><small>May 2019 - July 2019</small></li>	
+						<li><span><a class="li-link" href="https://www.bookingsaround.com" target="__blank">BookingsAround</a></span>
+							<span>Web Developer Intern</span>
+						<div class="work-list">
+							<small>
+								<i class="fa fa-arrow-right"></i>Building web components using react
+							</small>
+							<small>
+								<i class="fa fa-arrow-right"></i>Increased website performance
+							</small>
+							<small>
+								<i class="fa fa-arrow-right"></i>Deploying code to AWS 
+							</small>
+						</div>
+						<small>Jun 2018 - Aug 2018</small></li>
+						<li><span><a class="li-link" href="https://codingninjas.in" target="__blank">Coding Ninjas</a></span>
+							<span>Teaching Assistant</span>
+							<small>I have worked as a Teaching assistant for coding ninjas's online course for competitive coding (eminence). My responsibilities included problem setting on codezen, setting up test-cases and scaffolds and debugging codes.</small><small>Dec 2017 - Apr 2017</small></li>
 					</ul>
 				</div>
 				<div class="edu">
 					<h3><i class="fa fa-graduation-cap"></i>Education</h3>
 					<ul>
 						<li><span>Bachelor of Technology (B.Tech), CSE
-</span><small>University School Of Information, Communication And Technology, GGSIP University</small>
-<small>CGPA : 8.52/10
-</small>
-<small>Aug. 2016 - Aug. 2020</small></li>
-						<li><span>XII (Senior Secondary), Science
-</span><small>CBSE Board (Kendriya Vidyalaya)</small>
-<small>Percentage : 93.60%
-</small>
-<small>Year of Completion: 2016</small>
-</li>
-						<li><span>X (Secondary)
-</span><small>CBSE Board (Kendriya Vidyalaya)</small>
-	<small>CGPA : 10.00/10
-</small>
-<small>Year of Completion: 2016</small>
-</li>
+						</span><small>University School Of Information, Communication And Technology, GGSIP University</small>
+						<small>CGPA : 8.52/10
+						</small>
+						<small>Aug. 2016 - Aug. 2020</small></li>
+												<li><span>XII (Senior Secondary), Science
+						</span><small>CBSE Board (Kendriya Vidyalaya)</small>
+						<small>Percentage : 93.60%
+						</small>
+						<small>Year of Completion: 2016</small>
+						</li>
+												<li><span>X (Secondary)
+						</span><small>CBSE Board (Kendriya Vidyalaya)</small>
+							<small>CGPA : 10.00/10
+						</small>
+						<small>Year of Completion: 2016</small>
+						</li>
 					</ul>
+				</div>
+				<div class="edu training">
+						<h3><i class="fa fa-graduation-cap"></i>Training</h3>
+						<ul>
+							<li><span>Mobile Web Specialist Nanodegree
+							</span><small>Udacity</small>
+							<small>Jun 2018 - Aug 2018</small>
+							<small>learned to make Accessible, Responsive, Offline Capable and Performant Web Apps</small>
+							</li>
+							<li><span>Machine learning course
+							</span><small>Coding Ninjas</small>
+							<small>Dec 2018 - May 2019
+							</small>
+							</li>
+						</ul>
 				</div>
 				<div class="skills-prog">
 					<h3><i class="fas fa-code"></i>Programming Skills</h3>
@@ -121,6 +175,11 @@
 							</div>
 						</li>
 						<li data-percent="50"><span>Flask</span>
+							<div class="skills-bar">
+								<div class="bar"></div>
+							</div>
+						</li>
+						<li data-percent="50"><span>PHP</span>
 							<div class="skills-bar">
 								<div class="bar"></div>
 							</div>
